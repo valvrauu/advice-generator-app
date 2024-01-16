@@ -23,8 +23,29 @@
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
-  Advice #<!-- Advice ID goes here -->
+  <div class="card-advice">
+    <div class="card-advice__infos">
+      <h1 class="primary-title">advice #<span class="card-advice__id">117</span></h1>
 
-  "<!-- Advice text goes here -->"
+      <p class="card-advice__text">
+        “It is easy to sit up and take notice, what’s difficult is getting up and taking action.”
+      </p>
+    </div>
+
+    <div class="card-advice__pattern">
+      <img 
+        src="./src/imgs/pattern-divider-desktop.svg" 
+        alt=""
+      >
+    </div>
+
+    <button class="btn btn--primary card-advice__btn" aria-label="generate citation">
+      <svg aria-hidden="true" focusable="false" width="24" height="24">
+        <use href="./src/imgs/sprite.svg#icon-dice"></use>
+      </svg>
+    </button>
+  </div>
+
+  <script src="./src/js/card-advice.js"></script>
 </body>
 </html>

@@ -58,3 +58,99 @@ body {
 
     font-family: var(--ff-primary);
 }
+
+.card-advice {
+    display: grid;
+    justify-items: center;
+    gap: 2.4rem;
+
+    position: relative;
+
+    padding: 3.9rem 2rem 6.4rem;
+    max-width: 54rem;
+
+    background: var(--dark-grayish-blue);
+
+    text-align: center;
+
+    border-radius: 1.5rem;
+    box-shadow: var(--box-shadow-one);
+}
+
+.card-advice__infos {
+    display: grid;
+    gap: 2.4rem;
+}
+
+.card-advice__text {
+    font-size: var(--fs-md);
+    letter-spacing: -.24px;
+}
+
+.card-advice__pattern {
+    position: relative;
+
+    width: 100%;
+    height: 1.6rem;
+
+    overflow: hidden;
+}
+
+.card-advice__pattern img {
+    display: block;
+
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+.card-advice__btn {
+    position: absolute;
+    bottom: 0;
+
+    justify-self: center;
+    transform: translateY(50%);
+}
+
+.primary-title {
+    color: var(--neon-green);
+
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.btn {
+    border: 0;
+    cursor: pointer;
+}
+
+.btn--primary {
+    display: flex;
+    padding: 2rem;
+
+    background: var(--neon-green);
+
+    border-radius: 50%;
+    transition: filter 250ms;
+}
+
+.btn--primary:hover { filter: brightness(75%); }
+
+@media screen and (min-width: 48em) {
+    .card-advice {
+        gap: 4rem;
+        padding: 4.7rem 4.8rem 7.2rem;
+    }
+
+    .card-advice__text {
+        font-size: var(--fs-lg);
+        letter-spacing: -.28px;
+    }
+
+    .primary-title {
+        font-size: var(--fs-base);
+        letter-spacing: 3.5px;
+    }
+}
