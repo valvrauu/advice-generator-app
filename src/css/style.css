@@ -133,10 +133,12 @@ body {
     background: var(--neon-green);
 
     border-radius: 50%;
-    transition: filter 250ms;
+    transition: box-shadow 250ms;
 }
 
-.btn--primary:hover { filter: brightness(75%); }
+.btn--primary:hover {
+    box-shadow: 0 0 3rem var(--neon-green);
+}
 
 @media screen and (min-width: 48em) {
     .card-advice {
